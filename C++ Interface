@@ -1,0 +1,28 @@
+// C++ Interface
+ 
+#include<iostream>  
+#include<iomanip> 
+#include <cstring>
+#include <cmath>
+
+
+// Opening a new Database connection
+int sqlite3_open(
+  const char *filename,   /* Database filename (UTF-8) */
+  sqlite3 **ppDb          /* OUT: SQLite db handle */
+);
+
+
+// Compile an SQL Statement
+int sqlite3_prepare(
+  sqlite3 *db,            /* Database handle */
+  const char *zSql,       /* SQL statement, UTF-8 encoded */
+  int nByte,              /* Maximum length of zSql in bytes. */
+  sqlite3_stmt **ppStmt,  /* OUT: Statement handle */
+  const char **pzTail     /* OUT: Pointer to unused portion of zSql */
+);
+
+int sqlite3_step(sqlite3_stmt*);
+
+
+
