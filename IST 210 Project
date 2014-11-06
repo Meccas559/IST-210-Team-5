@@ -1,17 +1,12 @@
 
 
--- Describe CARDSUBTYPE
-CREATE TABLE CardSubtype
-(
-	SubtypeId INT PRIMARY KEY NOT NULL, 
-	Subtype VARCHAR(50)
-)
-
 
 -- Describe CARDCOLORS
-CREATE TABLE CardColors
+CREATE TABLE Symbols
 (
-  ColorsId INT PRIMARY KEY NOT NULL,
+  SymbolId INT PRIMARY KEY NOT NULL,
+  Symbol VARCHAR(2),
+  Value INT,
   Color VARCHAR(20)
 )
 
@@ -21,7 +16,7 @@ CREATE TABLE CardComponent
 CardId INT PRIMARY KEY NOT NULL,
 CardName VARCHAR(60),
 Manacost VARCHAR(50),
-CardText VARCHAR(150),
+CardText VARCHAR(500),
 CardRarity INT,
 CardExpansion INT,
 Power INT,
