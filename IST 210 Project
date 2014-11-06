@@ -1,1 +1,39 @@
-// The project
+
+
+-- Describe CARDSUBTYPE
+CREATE TABLE CardSubtype
+(
+	SubtypeId INT PRIMARY KEY NOT NULL, 
+	Subtype VARCHAR(50)
+)
+
+
+-- Describe CARDCOLORS
+CREATE TABLE CardColors
+(
+  ColorsId INT PRIMARY KEY NOT NULL,
+  Color VARCHAR(20)
+)
+
+-- Describe CARDCOMPONENT
+CREATE TABLE CardComponent
+(
+CardId INT PRIMARY KEY NOT NULL,
+CardName VARCHAR(60),
+Manacost VARCHAR(50),
+CardText VARCHAR(150),
+CardRarity INT,
+CardExpansion INT,
+Power INT,
+Toughness INT,
+CONSTRAINT UN_CardName UNIQUE (CardName)
+)
+
+-- Describe CARDTYPE
+CREATE TABLE CardType
+(
+	TypeId INT NOT NULL PRIMARY KEY,
+	Type VARCHAR(50)
+)
+
+
