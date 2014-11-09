@@ -1,10 +1,7 @@
-
-
-
 -- Describe CARDCOLORS
 CREATE TABLE Symbols
 (
-	SymbolId INT PRIMARY KEY NOT NULL,
+	SymbolId VARCHAR(10) PRIMARY KEY NOT NULL,
 	Symbol VARCHAR(2),
 	Value INT,
 	Color VARCHAR(20)
@@ -47,3 +44,6 @@ CREATE TABLE CostSymbols
 	SymbolId INT NOT NULL, 
 	FOREIGN KEY (CardId) REFERENCES CardComponent(CardId)
 )
+
+INSERT INTO 
+
