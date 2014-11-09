@@ -45,5 +45,4 @@ CREATE TABLE CostSymbols
 	FOREIGN KEY (CardId) REFERENCES CardComponent(CardId)
 )
 
-INSERT INTO 
 
