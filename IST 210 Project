@@ -4,24 +4,24 @@
 -- Describe CARDCOLORS
 CREATE TABLE Symbols
 (
-  SymbolId INT PRIMARY KEY NOT NULL,
-  Symbol VARCHAR(2),
-  Value INT,
-  Color VARCHAR(20)
+	SymbolId INT PRIMARY KEY NOT NULL,
+	Symbol VARCHAR(2),
+	Value INT,
+	Color VARCHAR(20)
 )
 
 -- Describe CARDCOMPONENT
 CREATE TABLE CardComponent
 (
-CardId INT PRIMARY KEY NOT NULL,
-CardName VARCHAR(60),
-Manacost VARCHAR(50),
-CardText VARCHAR(500),
-CardRarity INT,
-CardExpansion INT,
-Power INT,
-Toughness INT,
-CONSTRAINT UN_CardName UNIQUE (CardName)
+	CardId INT PRIMARY KEY NOT NULL,
+	CardName VARCHAR(60),
+	Manacost VARCHAR(50),
+	CardText VARCHAR(500),
+	CardRarity INT,
+	CardExpansion INT,
+	Power INT,
+	Toughness INT,
+	CONSTRAINT UN_CardName UNIQUE (CardName)
 )
 
 -- Describe CARDTYPE
@@ -31,4 +31,19 @@ CREATE TABLE CardType
 	Type VARCHAR(50)
 )
 
+CREATE TABLE TypeLink 
+(
+	CardId INT NOT NULL, 
+	TypeId INT NOT NULL, 
+	PRIMARY KEY (CardId, TypeId),
+	FOREIGN KEY (CardId) REFERENCES CardComponent(CardId),
+	FOREIGN KEY (TypeId) REFERENCES cardtype(TypeId)
+)
 
+CREATE TABLE CostSymbols
+(
+	CSID INT PRIMARY KEY NOT NULL, 
+	CardId INT NOT NULL,
+	SymbolId INT NOT NULL, 
+	FOREIGN KEY (CardId) REFERENCES CardComponent(CardId)
+)
