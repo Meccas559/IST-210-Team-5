@@ -13,11 +13,11 @@ CREATE TABLE CardComponent
 	CardId INT PRIMARY KEY NOT NULL,
 	CardName VARCHAR(60),
 	Manacost VARCHAR(50),
-	CardText VARCHAR(500),
-	CardRarity INT,
-	CardExpansion INT,
 	Power INT,
 	Toughness INT,
+	CardText VARCHAR(500),
+	CardExpansion INT,
+	CardRarity INT,
 	CONSTRAINT UN_CardName UNIQUE (CardName)
 )
 
