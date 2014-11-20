@@ -86,4 +86,4 @@ INSERT INTO Symbols
 VALUES ("Symbol-13", "R", 1,"Red")
 
 INSERT INTO Symbols
-VALUES ("Symbol-14", "X", 0)
+VALUES ("Symbol-14", "X", 0, "Colorless")
