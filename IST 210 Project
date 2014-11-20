@@ -16,8 +16,8 @@ CREATE TABLE CardComponent
 	Power INT,
 	Toughness INT,
 	CardText VARCHAR(500),
-	CardExpansion INT,
-	CardRarity INT,
+	CardExpansion VARCHAR(25),
+	CardRarity VARCHAR(25),
 	CONSTRAINT UN_CardName UNIQUE (CardName)
 )
 
