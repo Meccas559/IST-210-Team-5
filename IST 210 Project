@@ -46,44 +46,44 @@ CREATE TABLE CostSymbols
 	FOREIGN KEY (CardId) REFERENCES CardComponent(CardId)
 )
 
-INSERT INTO Symbols
-VALUES ("Symbol-01", "1", 1,"Colorless")
+INSERT INTO Symbols (Symbol, Value, Color)
+VALUES ("1", 1,"Colorless")
 
-INSERT INTO Symbols
-VALUES ("Symbol-02", "2", 3,"Colorless")
+INSERT INTO Symbols (Symbol, Value, Color)
+VALUES ("2", 3,"Colorless")
 
-INSERT INTO Symbols
-VALUES ("Symbol-03", "3", 3,"Colorless")
+INSERT INTO Symbols (Symbol, Value, Color)
+VALUES ("3", 3,"Colorless")
 
-INSERT INTO Symbols
-VALUES ("Symbol-04", "4", 4,"Colorless")
+INSERT INTO Symbols (Symbol, Value, Color)
+VALUES ("4", 4,"Colorless")
 
-INSERT INTO Symbols
-VALUES ("Symbol-05", "5", 5,"Colorless")
+INSERT INTO Symbols (Symbol, Value, Color)
+VALUES ("5", 5,"Colorless")
 
-INSERT INTO Symbols
-VALUES ("Symbol-06", "6", 6,"Colorless")
+INSERT INTO Symbols (Symbol, Value, Color)
+VALUES ("6", 6,"Colorless")
 
-INSERT INTO Symbols
-VALUES ("Symbol-07", "7", 7,"Colorless")
+INSERT INTO Symbols (Symbol, Value, Color)
+VALUES ("7", 7,"Colorless")
 
-INSERT INTO Symbols
-VALUES ("Symbol-08", "8", 8,"Colorless")
+INSERT INTO Symbols (Symbol, Value, Color)
+VALUES ("8", 8,"Colorless")
 
-INSERT INTO Symbols
-VALUES ("Symbol-09", "W", 1,"White")
+INSERT INTO Symbols (Symbol, Value, Color)
+VALUES ("W", 1,"White")
 
-INSERT INTO Symbols
-VALUES ("Symbol-10", "B", 1,"Black")
+INSERT INTO Symbols (Symbol, Value, Color)
+VALUES ("B", 1,"Black")
 
-INSERT INTO Symbols
-VALUES ("Symbol-11", "U", 1,"Blue")
+INSERT INTO Symbols (Symbol, Value, Color)
+VALUES ("U", 1,"Blue")
 
-INSERT INTO Symbols
-VALUES ("Symbol-12", "G", 1,"Green")
+INSERT INTO Symbols (Symbol, Value, Color)
+VALUES ("G", 1,"Green")
 
-INSERT INTO Symbols
-VALUES ("Symbol-13", "R", 1,"Red")
+INSERT INTO Symbols (Symbol, Value, Color)
+VALUES ("R", 1,"Red")
 
-INSERT INTO Symbols
-VALUES ("Symbol-14", "X", 0, "Colorless")
+INSERT INTO Symbols (Symbol, Value, Color)
+VALUES ("X", 0, "Colorless")
